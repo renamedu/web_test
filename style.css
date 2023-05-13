@@ -1,0 +1,87 @@
+body, ul, h1, h2, h3, a, button, p {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 140% monospace;
+}
+.main-header {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 10px 0;
+}
+.main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.main-content-sort {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    padding: 4px 4px 0 4px;
+    background-color: #f0f5f5;
+}
+.main-filter {
+    display: flex;
+    align-items: center;
+}
+.main-filter-input {
+    width: 400px;
+    line-height: 20px;
+    margin: 4px 0;
+    font: 100% monospace;
+}
+.main-filter-button {
+    margin-left: 20px;
+    font: 100% monospace;
+    height: 30px;
+}
+.main-sort {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+.sort-btn {
+    height: 30px;
+    padding: 0 30px;
+}
+.main-list {
+    background-color: #f0f5f5;
+}
+.main-list-table {
+    width: 1000px;
+    margin: 5px;
+    text-align: center;
+}
+table,
+th,
+td {
+    padding: 4px 0;
+    border: 1px solid darkgrey;
+    border-collapse: collapse;
+}
+.table-price {
+    width: 200px;
+    background-color: #f9f2ec;
+}
+tr:nth-child(2n) td {
+    box-shadow: 0px 0px 50px 30px rgba(34, 60, 80, 0.08) inset;
+}
+
+@media (max-width: 1008.98px) {
+    .main-content-sort, .main-list-table {
+        width: 100vw;
+    }
+}
+@media (max-width: 681.98px) {
+    .main-filter-input {
+        width: 160px;
+    }
+}
