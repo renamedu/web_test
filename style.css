@@ -41,6 +41,7 @@ body, ul, h1, h2, h3, a, button, p {
     margin-left: 20px;
     font: 100% monospace;
     height: 30px;
+    padding: 0 30px;
 }
 .main-sort {
     display: flex;
